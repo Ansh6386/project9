@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="assignment ">
+        <div class=" w-full bg-purple-900 py-6">
+            <h2 class="ml-20 text-3xl font-bold text-white tracking-wide">OUR SERVICES</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 px-4 md:px-16">
+
+            <div
+                class="bg-violet-200 rounded-lg shadow-lg p-6 text-center hover:rotate-box transform transition-transform duration-100 ease-in-out mt-20">
+                <div class="mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/0000FF/phone.png" class="mx-auto"
+                        alt="Emergency Plumbing">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900">Emergency Plumbing Services</h3>
+                <p class="text-gray-600">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends,
+                    and holidays.</p>
+                <p class="text-violet-600 text-xl mt-5 hover:text-violet-900 cursor-pointer">Explore the service -></p>
+            </div>
+
+
+            <div
+                class="bg-violet-200 rounded-lg shadow-lg p-6 text-center hover:rotate-box transform transition-transform duration-100 ease-in-out mt-20">
+                <div class="mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/plumbing.png" class="mx-auto"
+                        alt="Plumbing and Drains">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900">Plumbing and Drains</h3>
+                <p class="text-gray-600">As the largest plumbing and drain service company, we make thousands of repairs
+                    every day.</p>
+                <p class="text-violet-600 text-xl mt-5 hover:text-violet-900 cursor-pointer">Explore the service -></p>
+            </div>
+
+            <div
+                class="bg-violet-200 rounded-lg shadow-lg p-6 text-center hover:rotate-box transform transition-transform duration-100 ease-in-out mt-20">
+                <div class="mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/0000FF/water.png" class="mx-auto" alt="Water Damage">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900">Water Damage</h3>
+                <p class="text-gray-600">Our teams are equipped with state-of-the-art water extraction and cleanup
+                    equipment.</p>
+                <p class="text-violet-600 text-xl mt-5 hover:text-violet-900 cursor-pointer">Explore the service -></p>
+            </div>
+
+            <div
+                class="bg-violet-200 rounded-lg shadow-lg p-6 text-center hover:rotate-box transform transition-transform duration-100 ease-in-out mt-20">
+                <div class="mb-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5109/5109503.png" class="mx-auto h-14"
+                        alt="Water Heaters">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900">Water Heaters</h3>
+                <p class="text-gray-600">Trust us for the repair and replacement of gas, electric, and tankless water
+                    heaters.</p>
+                <p class="text-violet-600 text-xl mt-5 hover:text-violet-900 cursor-pointer">Explore the service -></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <script>
+        // Hover animation using anime.js
+        document.querySelectorAll('.hover\\:rotate-box').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                anime({
+                    targets: item,
+                    rotate: '1turn',
+                    duration: 1000,
+                    easing: 'easeInOutQuad'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
